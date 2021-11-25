@@ -1,0 +1,96 @@
+.header{
+ 
+}
+
+body{
+  background-image:url("https://suhanidadhich.github.io/images/bg.jpg");
+  background-size:cover; 
+  
+  border:solid 60px #080d2e;
+}
+
+.nav{
+  overflow: hidden; 
+  background-color: #f5f0e1; 
+  
+}
+.nav a {
+  float: right; 
+  display: block; 
+  color: #1e3d59; 
+  text-align: center; 
+  padding: 14px 20px; 
+  
+}
+
+.nav a:hover {
+  background-color: #ddd; 
+  color: black; 
+}
+
+h1{
+  text-align:center;
+    font-size:130px;
+ font-family: 'Aladin', cursive;
+}
+
+h2{
+  text-align:center;
+  font-size:40px;
+ font-family: 'Aladin', cursive;
+ color:#080d2e;
+}
+
+
+.a{
+  font-size:42px;
+}
+
+.column{
+  flex:50%
+  padding:25px;
+  
+}
+
+.row{
+  display:flex;
+}
+
+.animate{
+  margin:0 auto;
+  width:200px;
+  height:200px;
+  background-color:#320ca8;
+  animation:square-to-circle 1s .83s infinite cubic-bezier(1,.015,.295,1.22) alternate;
+}
+
+@keyframes square-to-circle{
+  0%{
+    border-radius:0 0 0 0;
+    background: #080d2e;
+    transform:rotate(0deg);
+  }
+25%{
+  border-radius:25% 25% 25% 25%;
+    background: #080d2e;
+    transform:rotate(45deg);
+  }
+  
+  50%{
+    border-radius:50% 50% 50% 50%;
+    background: #080d2e;
+    transform:rotate(90deg);
+  }
+  
+  75%{
+    border-radius:75% 75% 75% 75% ;
+    background: #080d2e;
+    transform:rotate(180deg);
+  }
+  
+  100%{
+    border-radius:100% 100% 100% 100%;
+    background: #080d2e;
+    transform:rotate(360deg);
+  }
+}
